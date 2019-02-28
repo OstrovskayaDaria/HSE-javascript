@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <titleПеченьки будущего></title>
+  </head>
+  <body>
+    <img onclick="tellMyFuture()" src="cookie.png" alt="Печенька">
+    <h1 id="heading">Нажми на печеньку и узнай будущее</h1>
+    <script>
+      let heading = document.getElementById("heading")
+      function tellMyFuture() {
+        let phrases = ["Однажды ты станешь великим магом", "Тебя ждёт торт", "В 2034 году ты заработаешь миллион.. белорусских долларов", "Никто тебя не заставит носит костюм Роналда МакДоналда", "Однажды "]
+          let randomPhrasesIndex = Math.floor(Math.random() * phrases.length)
+        heading.textContent = phrases[randomPhrasesIndex]
+      }
+    </script>
+  </body>
+</html>
